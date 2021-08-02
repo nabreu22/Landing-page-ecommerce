@@ -1,3 +1,4 @@
+/*-----------Reset-----------*/
 * {
   margin: 0;
   padding: 0;
@@ -12,19 +13,20 @@ body {
   -webkit-font-smoothing: antialiased !important;
 }
 
+/*-----------Header-----------*/
 header {
   box-shadow: 1px 2px rgb(243, 239, 239, 1);
   position: relative;
   z-index: 2;
 }
 
-.container-top {
+header .container-top {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 220px;
 }
 
-header .top {
+header .container-top .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,78 +37,71 @@ header .top {
   padding: 0;
 }
 
-header a.logo img {
+header .container-top .top a.logo img {
   width: 200px;
   height: 50px;
 }
 
-header .go-website {
+header .container-top .top .go-website {
   display: flex;
   align-items: center;
 }
 
-header .go-website a.link-store {
+header .container-top .top .go-website a.link-store {
   font-size: 15px;
   color: #fff;
   text-decoration: none;
 }
 
-header .go-website img {
+header .container-top .top .go-website a img {
   width: 27px;
   height: 27px;
 }
 
+/*-----------Middle-----------*/
 .container-middle {
   max-width: 1170px;
-
   margin: 0 auto;
   padding: 0 220px;
   background: rgb(230, 5, 5);
 }
-.clock {
-  background: #e60014;
-}
-/*__________________________*/
 
-.counter {
+.container-middle .counter {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 0;
 }
 
-.counter p {
+.container-middle .counter p {
   font-size: 40px;
   padding: 50px 0 20px 0;
 }
 
-.counter img {
+.container-middle .counter img {
   width: 700px;
   border: 3px solid#fff;
-  border-radius: 15px;
+  border-radius: 8px;
   padding: 20px 0 20px 0;
 }
 
-.slogan {
+.container-middle .highlight-text {
   display: flex;
-
   margin-top: 10px;
 }
-.leftText,
-.rightText {
+.container-middle .highlight-text .leftText,
+.container-middle .highlight-text .rightText {
   margin: 0;
   padding: 0;
   font-weight: 600;
 }
 
-.leftText .topText {
+.container-middle .highlight-text .leftText .topText {
   font-size: 25px;
   padding-top: 45px;
 
   margin-left: 0;
   height: 15px;
 }
-.leftText .bottomText {
+.container-middle .highlight-text .leftText .bottomText {
   font-size: 170px;
   font-weight: 600;
   margin-left: -8px;
@@ -114,7 +109,7 @@ header .go-website img {
   top: -35px;
 }
 
-.rightText .topText {
+.container-middle .highlight-text .rightText .topText {
   font-size: 60px;
   font-weight: 300;
   position: relative;
@@ -122,7 +117,7 @@ header .go-website img {
   bottom: -55px;
 }
 
-.rightText .bottomText {
+.container-middle .highlight-text .rightText .bottomText {
   font-size: 50px;
   margin-top: 0;
 
@@ -130,7 +125,7 @@ header .go-website img {
   left: 8px;
   bottom: -45px;
 }
-/*__________________________*/
+/*-----------Buttom-----------*/
 .container-buttom {
   max-width: 1170px;
   margin: 0 auto;
@@ -140,21 +135,21 @@ header .go-website img {
   /* box-shadow: 1px 2px rgb(139, 15, 15); */
 }
 
-.request-subscribe {
+.container-buttom .request-subscribe {
   display: flex;
   justify-content: space-between;
 }
-.request-subscribe p {
+.container-buttom .request-subscribe p {
   margin-bottom: 20px;
 }
 
-.subscribe {
+.container-buttom .subscribe {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
 
-.subscribe input {
+.container-buttom .subscribe input {
   width: 79%;
   height: 50px;
   padding-left: 10px;
@@ -165,7 +160,7 @@ header .go-website img {
   border: none;
 }
 
-.subscribe button {
+.container-buttom .subscribe button {
   width: 20%;
   background: #ecf020;
   color: #e60014;
@@ -175,42 +170,31 @@ header .go-website img {
   border: none;
 }
 
-.midia {
+.container-buttom .midia {
   display: flex;
   justify-content: space-between;
   border-top: 20px;
 }
 
-footer {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 220px;
-}
-
-.text-offers {
-  position: relative;
-  top: 50px;
-}
-
-.midia {
+.container-buttom .midia {
   display: flex;
   align-items: center;
   justify-content: left;
 }
 
-.midia p {
+.container-buttom .midia p {
   padding-right: 10px;
 }
 
-.social-midia {
+.container-buttom .midia .social-midia {
   display: flex;
 }
 
-.social-midia a {
+.container-buttom .midia .social-midia a {
   display: block;
 }
 
-.social-midia a img {
+.container-buttom .midia .social-midia a img {
   height: 30px;
   padding-right: 10px;
 }
